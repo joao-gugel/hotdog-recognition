@@ -1,4 +1,4 @@
-# hotdog-recognition
+# food-recognition
 
 Detect foods easily.
 
@@ -16,5 +16,5 @@ import foodRecognition from "food-recognition";
 const food = "hotdog.";
 const result = foodRecognition(food);
 
-console.log(result); // true or false
+console.log(result); // It's a hotdog
 ```
