@@ -1,20 +1,20 @@
 # hotdog-recognition
 
-Detect hot dogs easily.
+Detect foods easily.
 
 ## Installation
 
 ```bash
-npm install hotdog-recognition
+npm install food-recognition
 ```
 
 ## How to use
 
 ```ts
-import hotdogRecognizer from "hotdog-recognition";
+import foodRecognition from "food-recognition";
 
-const text = "hotdog.";
-const resul = hotdogRecognizer(text);
+const food = "hotdog.";
+const result = foodRecognition(food);
 
 console.log(result); // true or false
 ```
