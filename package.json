@@ -1,0 +1,20 @@
+{
+  "name": "hotdog-recognition",
+  "version": "1.0.1",
+  "description": "A library for recognizing hotdogs.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "João Gugel",
+    "url": "https://github.com/joao-gugel"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "bun build ./index.ts --outdir dist --target node"
+  }
+}
