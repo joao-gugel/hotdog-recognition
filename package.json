@@ -1,7 +1,7 @@
 {
-  "name": "hotdog-recognition",
-  "version": "1.0.1",
-  "description": "A library for recognizing hotdogs.",
+  "name": "food-recognition",
+  "version": "1.0.3",
+  "description": "A library for recognizing food.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "publishConfig": {
@@ -15,6 +15,11 @@
     "dist"
   ],
   "scripts": {
-    "build": "bun build ./index.ts --outdir dist --target node"
+    "build:js": "bun build ./index.ts --outdir dist --target node",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build": "npm run build:js && npm run build:types"
+  },
+  "dependencies": {
+    "hotdog-recognition": "."
   }
 }

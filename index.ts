@@ -36,9 +36,13 @@ const matches = [
   "hotd0g",
 ];
 
-const hotdogRecognizer = (text: string): boolean => {
+const foodRecognizer = (text: string): string => {
   const lowerText = text.toLowerCase();
-  return matches.some((match) => lowerText.includes(match));
+  const isHotdog = matches.some((match) => lowerText.includes(match));
+
+  if (isHotdog) return "It's a hotdog!";
+
+  return "It's not a hotdog.";
 };
 
-export default hotdogRecognizer;
+export default foodRecognizer;
